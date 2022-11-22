@@ -5,14 +5,14 @@ import thunk from 'redux-thunk';
 
 import {Provider} from 'react-redux';
 import configureStore from './src/store';
-import Counter from './src/Screens/Counter';
+import TodoList from './src/Screens/TodoList';
 
 const store = configureStore();
 
 const App = () => {
   return (
     <Provider store={store}>
-      <Counter />
+      <TodoList />
     </Provider>
   );
 };
